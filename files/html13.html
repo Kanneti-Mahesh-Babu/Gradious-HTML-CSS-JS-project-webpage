@@ -1,0 +1,351 @@
+<!--FORM-2-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Exercise-2</title>
+	<script src="https://kit.fontawesome.com/cf9df5c1cf.js" crossorigin="anonymous"></script>
+	<style>
+		*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+/*--------BODY SECTION-----*/
+#logo{
+    position:absolute;
+    border-radius: 50%;
+    margin:8px;
+    width:50px;
+    height:50px;
+}
+
+/*-----SCROLLBAR-----*/
+::-webkit-scrollbar{
+    width:6px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #30ff00);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, #00c6ff);
+    border-bottom: 1px solid black;
+}
+
+/*-------HEADER BAR-----------------*/
+.menu-bar{
+    background: aliceblue;
+    box-shadow: -2px 2px 10px black;
+}
+.menu-bar ul{
+    text-align: right;
+    font-family: sans-serif;
+    margin-right:30px;
+}
+.menu-bar ul li{
+    display: inline-flex;
+    margin:10px;
+    padding:15px;
+    text-align: center;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:black;
+}
+.menu-bar ul li a:hover{
+    text-decoration: none;
+    color:white;
+}
+.active,.menu-bar ul li:hover{
+    background: blue;
+    cursor: pointer;
+    border-radius:5px;
+    box-shadow: -2px 2px 5px grey;
+}
+.dropdown{
+    display:none;
+    width:150px;
+}
+.menu-bar ul li:hover .dropdown{
+    display:block;
+    position:absolute;
+    background: aliceblue;
+    margin-top:38px;
+    margin-left: -15px;
+    padding:5px;
+    
+}
+.menu-bar ul li:hover .dropdown li{
+    display:block;
+    position:relative;
+    left:0px;
+    transition: left 1s;
+    border-bottom: 1px dotted grey;
+}
+.menu-bar ul li:hover .dropdown li:hover{
+    left:10px;
+}
+
+
+.sub-dropdown{
+    display:none;
+}
+.dropdown li:hover .sub-dropdown{
+    display:block;
+    position: absolute;
+    background: aliceblue;
+    right:-165px;
+    top:10px;
+}
+.sub-dropdown1{
+    display:none;
+}
+.dropdown li:hover .sub-dropdown1{
+    display:block;
+    position: absolute;
+    background: aliceblue;
+    right:-156px;
+    top:10px;
+}
+#none{
+    border-bottom:none;
+
+}
+
+/*----------END----------------------*/
+
+
+/*-------------FOOTER SECTION------------*/
+
+footer{
+    height:500px;
+    background:black;
+    text-align:center;
+    color:blue;
+    padding:40px 0px;
+    padding-right:10px;
+    margin-top:1000px;
+}
+#footer{
+    color:rgb(255, 7, 90);
+    font-size:15px;
+    position:relative;
+    top:1px;
+}
+#foot{
+    list-style: none;
+    margin-top:50px;
+}
+#foot li a, #foot1 li a{
+   text-decoration: none;
+   color:aliceblue;
+}
+#foot1 li{
+    list-style: none;
+    display:inline;
+}
+#foot1 li{
+    width:20px;
+    height:20px;
+    margin:10px;
+    border:1px solid aliceblue;
+    padding:10px;
+    border-radius: 50%;
+}
+#foot1 li:hover{
+    background: linear-gradient(to right,orange,orangered);
+    cursor: pointer;
+}
+
+
+/*******************************************************/
+#f1{
+    background: rgb(36, 36, 36);
+    height:400px;
+    margin-top: 350px;
+    
+}
+#f1 > mark{
+    width:20%;
+    float:left;
+    margin:35px;
+    height:300px;
+    margin-left:40px;
+    margin-top:45px;
+    color:aliceblue;
+    box-shadow: 2px -2px 5px rgb(102, 241, 195);
+    background: black;
+}
+#f1 > mark > i{
+    margin:100px;
+}
+
+/*---------------------FOOTER END-----------------*/
+	</style>
+</head>
+<body style="background:radial-gradient(limegreen,mediumspringgreen,lime);">
+
+	    <a href="./index.html"><img src="./images/logo.png" id="logo"/></a>
+<!------------------------------------------------------------------------------------>
+                <!--HEADER Section-->
+    <header class="menu-bar">
+        <ul>
+            <li class="active"><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-folder-open"></i> Portfolio</a>
+                    <ul class="dropdown">
+                        <li><a href="#"> HTML <i class="fa-solid fa-caret-right"></i> </a>
+                            <ul class="sub-dropdown">
+                                <li><a href="./html1.html">Exercise1</a></li>
+                                <li><a href="./html2.html">Exercise2</a></li>
+                                <li><a href="./html3.html">Exercise3</a></li>
+                                <li><a href="./html4.html">Exercise4</a></li>
+                                <li><a href="./html5.html">Exercise5</a></li>
+                                <li><a href="./html6.html">Exercise6</a></li>
+                                <li><a href="./html7.html">Exercise7</a></li>
+                                <li><a href="./html8.html">Exercise8</a></li>
+                                <li><a href="./html9.html">Exercise9</a></li>
+                                <li><a href="./html10.html">Exercise10</a></li>
+                                <li><a href="./html11.html">Exercise11</a></li>
+                                <li><a href="./html12.html">Exercise12</a></li>
+                                <li><a href="./html13.html">Exercise13</a></li>
+                                <li><a href="./html14.html">Exercise14</a></li>
+                                <li  id="none"><a href="./html15.html">Exercise15</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"> CSS <i class="fa-solid fa-caret-right"></i> </a>
+                            <ul class="sub-dropdown1">
+                                <li><a href="./css1.html">Exercise1</a></li>
+                                <li><a href="./css2.html">Exercise2</a></li>
+                                <li><a href="./css3.html">Exercise3</a></li>
+                                <li  id="none"><a href="./css4.html">Exercise4</a></li>
+                            </ul>
+                        
+                        </li>
+                        <li><a href="./wlogin.html"> Figma </a></li>
+                        <li id="none"><a href="./mediaQuery.html"> MediaQuery </a></li>
+                    </ul>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-gavel"></i> Skills </a></li>
+            <li><a href="#"><i class="fa-brands fa-blogger"></i> Blog </a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> Contact </a></li>
+        </ul>
+    </header>
+
+<!--------------------------------------------------------------------------->
+
+	<br><br><br>
+<div style="width:700px;">
+<fieldset id="group1">
+	<legend align="center" style="font-family:Trebuchet MS; font-size:20px;"> U S E R&nbsp; F O R M </legend>
+<ul style="font-family:Trebuchet MS;">
+	<li><label>F I R S T &nbsp; N A M E</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="firstName" id="firstName" maxlength="10" placeholder="Enter Your Name"/></li>
+	<br>
+	<li><label>P A S S W O R D</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" id="password" placeholder="Enter Your Password"/></li>
+	<br>
+	<li>G E N D E R &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="value1" name="group1" id="rdoMale"/>Male<input type="radio" value="value2" name="group1" id="rdoFemale"/>Female</li>
+	<br>
+	<li>A D D R E S S &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="4" cols="20"></textarea></li>
+	<br>
+	<li>D.O.B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="dob">
+		<option value="jan">Jan</option>
+		<option value="feb">Feb</option>
+		<option value="mar">Mar</option>
+		<option value="apr">Apr</option>
+		<option value="may">May</option>
+		<option value="jun">Jun</option>
+		<option value="jul">Jul</option>
+		<option value="aug">Aug</option>
+		<option value="sept">Sept</option>
+		<option value="oct">Oct</option>
+		<option value="nov">Nov</option>
+		<option value="dec">Dec</option>
+	</select>
+	<select name="date">
+		<option value="one">1</option>
+		<option value="two">2</option>
+		<option value="three">3</option>
+		<option value="four">4</option>
+		<option value="five">5</option>
+		<option value="six">6</option>
+		<option value="seven">7</option>
+		<option value="eight">8</option>
+		<option value="nine">9</option>
+		<option value="ten">10</option>
+		<option value="eleven">11</option>
+		<option value="twelve">12</option>
+	</select>
+	<select name="year">
+		<option value="nineZero">1990</option>
+		<option value="nineOne">1991</option>
+		<option value="nineTwo">1992</option>
+		<option value="nineThree">1993</option>
+		<option value="nineFour">1994</option>
+		<option value="nineFive">1995</option>
+		<option value="nineSix">1996</option>
+		<option value="nineSeven">1997</option>
+		<option value="nineEight">1998</option>
+		<option value="nineNine">1999</option>
+	</select>
+	</li>
+	<br>
+	<li>S E L E C T &nbsp; G A M E S &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" value="value3" name="group1"/>Hockey&nbsp;<input type="checkbox" value="value4" name="group1"/>Football&nbsp;<input type="checkbox" value="value5" name="group1"/>Cricket&nbsp;<input type="checkbox" value="value6" name="group1"/>Volleyball</li>
+	<br>
+	<li>M A R I T A L &nbsp; S T A T U S &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="value1" name="group1" id="rdoMarried"/>Married&nbsp;<input type="radio" value="value4" name="group2" id="rdoUnmarried"/>Unmarried</li>
+	<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Submit"/>&nbsp;<input type="button" value="Reset"/>
+	<br><br><br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" value="value9" name="group1"/>I accept this agreement
+</ul>
+</fieldset>
+</div>
+
+
+<!---FOOTER Section-->
+
+<footer>
+    <mark id="f1">
+        <mark>
+            <br> <i> HOME </i>
+
+        </mark>
+
+        <mark>
+            <br> <i> PORTFOLIO </i>
+                <ul id="foot">
+                    <li><a href="./html1.html"> HTML </a></li><br>
+                    <li><a href="./css1.html"> CSS </a></li><br>
+                    <li><a href="./wlogin.html"> Figma </a></li><br>
+                    <li><a href="./mediaQuery.html"> MediaQuery </a></li><br>
+                </ul>
+
+        </mark>
+
+        <mark>
+            <br> <i> BLOG </i>
+
+        </mark>
+
+        <mark>
+            <br> <i> CONTACT US </i>  
+                <ul id="foot1">   <br><br><br>
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-whatsapp"></i></li>
+                    <li><i class="fa-brands fa-google-plus-g"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li><i class="fa-brands fa-instagram-square"></i></li>
+                    
+                </ul>
+            
+        </mark>
+
+    </mark>
+
+
+<br><br><br><br><br>
+All Copy rights are reserved 2022 &copy; &nbsp;Designed by &nbsp;&nbsp;<b id="footer"> Gradious </b>
+</footer>
+</body>
+</html>

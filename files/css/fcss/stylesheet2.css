@@ -1,0 +1,363 @@
+/*EXTERNAL STYLESHEETS*/
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+/*--------BODY SECTION-----*/
+#logo{
+    position:absolute;
+    border-radius: 50%;
+    margin:8px;
+    width:50px;
+    height:50px;
+}
+
+/*-----SCROLLBAR-----*/
+::-webkit-scrollbar{
+    width:6px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #30ff00);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, #00c6ff);
+    border-bottom: 1px solid black;
+}
+
+/*-------HEADER BAR-----------------*/
+.menu-bar{
+    background: aliceblue;
+    box-shadow: -2px 2px 10px black;
+}
+.menu-bar ul{
+    text-align: right;
+    font-family: sans-serif;
+    margin-right:30px;
+}
+.menu-bar ul li{
+    display: inline-flex;
+    margin:10px;
+    padding:15px;
+    text-align: center;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:black;
+}
+.menu-bar ul li a:hover{
+    text-decoration: none;
+    color:white;
+}
+.active,.menu-bar ul li:hover{
+    background: blue;
+    cursor: pointer;
+    border-radius:5px;
+    box-shadow: -2px 2px 5px grey;
+}
+.dropdown{
+    display:none;
+    width:150px;
+}
+.menu-bar ul li:hover .dropdown{
+    display:block;
+    position:absolute;
+    background: aliceblue;
+    margin-top:38px;
+    margin-left: -15px;
+    padding:5px;
+	z-index: 1;
+    
+}
+.menu-bar ul li:hover .dropdown li{
+    display:block;
+    position:relative;
+    left:0px;
+    transition: left 1s;
+    border-bottom: 1px dotted grey;
+}
+.menu-bar ul li:hover .dropdown li:hover{
+    left:10px;
+}
+
+
+.sub-dropdown{
+    display:none;
+}
+.dropdown li:hover .sub-dropdown{
+    display:block;
+    position: absolute;
+    background: aliceblue;
+    right:-165px;
+    top:10px;
+}
+.sub-dropdown1{
+    display:none;
+}
+.dropdown li:hover .sub-dropdown1{
+    display:block;
+    position: absolute;
+    background: aliceblue;
+    right:-156px;
+    top:10px;
+}
+#none{
+    border-bottom:none;
+}
+
+/*----------END----------------------*/
+
+/*------------------------------------------*/
+body{
+	background:no-repeat;
+	overflow-x: hidden;                   /*-------	overflow-y: hidden;-------*/
+	background:#093545;
+}
+
+/*-------------------BLACK DIV--------------------*/
+::placeholder{
+	color:#E5E5E5;
+	padding-left:15px;
+}
+
+#black{
+	position:absolute;
+	top:100px;
+	left:0px;
+	width:1340px;
+	height: 700px;
+	background: #093545;
+	padding-right:200px;
+	
+}
+#labblack{
+	/* Sign in */
+	position: absolute;
+	width: 212px;
+	height: 80px;
+	left: 650px;
+	top: 150px;                                                       
+	font-family: Lexend Deca;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 40px;
+	/* identical to box height */
+	text-align: center;
+	color: #FFFFFF;
+}
+	#parablack{
+		/* Sign in and start managing your candidates! */
+		position: absolute;
+		width: 347px;
+		height: 20px;
+		left: 580px;
+		top: 230px;                                            
+		font-family: Lexend Deca;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		/* identical to box height */
+		text-align: center;
+	color: #FFFFFF;
+}
+		#blackbox1{
+	/* Rectangle */
+	position: absolute;
+	width: 300px;
+	height: 45px;
+	left: 600px;
+	top: 280px;                                        
+	background: #224957;
+	border-radius: 10px;	
+	border: none;
+}
+	#blackbox2{
+		/* Rectangle */
+	position: absolute;
+	width: 300px;
+	height: 45px;
+	left: 600px;
+	top: 360px;    
+	border: none;                               
+	background: #224957;
+	border-radius: 10px;
+}
+	#blackcheck{
+		/* Rectangle 1 */
+	position: absolute;
+	width: 18px;
+	height: 17px;
+	left: 600px;
+	top: 430px;                                      
+	background: #224957;
+	border-radius: 5px;
+}
+	#blaspan{
+		/* Remember me */
+	position: absolute;
+	width: 108px;
+	height: 17px;
+	left: 620px;
+	top: 435px;                                             
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+	text-align: center;
+	color: #FFFFFF;
+}
+	#blaforgot{
+		/* Forgot password? */
+	position: absolute;
+	width: 128px;
+	height: 17px;
+	left: 780px;
+	top: 435px;                                                  
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+	text-align: center;
+	color: #20DF7F;
+}
+	#btn{
+		/* Button2 */
+	position: absolute;
+	width: 300px;
+	height: 45px;
+	left: 600px;
+	top: 480px;                                            
+	background: #20DF7F;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	border: none;
+}
+	#vect2{
+		/* Vector2 */
+	position: absolute;
+	width:1540px;
+	height: 111px;
+	left: 0px;
+	top: 593px;
+	background: none;
+}
+
+	#e1li1{
+		/* Ellipse 1 */
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	left: 36px;
+	top: 630px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius:200px;
+}
+	#elli2{
+				/* Ellipse 2 */
+	position: absolute;
+	width: 43px;
+	height: 43px;
+	left: 50px;
+	top: 643px;
+	background: #2D2D2D;
+	border-radius:100px;
+}
+#elli3{
+			/* Ellipse 3 */
+	position: absolute;
+	width: 17px;
+	height: 33px;
+	left: 71px;
+	top: 648px;
+	background: #FFFFFF;
+	border-radius:10px;
+}
+#wave{
+	/*position:absolute;
+	top: 590px;*/
+	background:none;
+	/*padding-bottom:20px;*/
+	position: absolute;
+	width:1540px;
+	height: 111px;
+	left: 0px;
+	top: 590px;
+}
+
+
+
+/*-------------FOOTER SECTION------------*/
+
+footer{
+    height:500px;
+    background:black;
+    text-align:center;
+    color:blue;
+    padding:40px 0px;
+    padding-right:10px;
+    margin-top:1000px;
+}
+#footer{
+    color:rgb(255, 7, 90);
+    font-size:15px;
+    position:relative;
+    top:1px;
+}
+#foot{
+    list-style: none;
+    margin-top:50px;
+}
+#foot li a, #foot1 li a{
+   text-decoration: none;
+   color:aliceblue;
+}
+#foot1 li{
+    list-style: none;
+    display:inline;
+}
+#foot1 li{
+    width:20px;
+    height:20px;
+    margin:10px;
+    border:1px solid aliceblue;
+    padding:10px;
+    border-radius: 50%;
+}
+#foot1 li:hover{
+    background: linear-gradient(to right,orange,orangered);
+    cursor: pointer;
+}
+
+
+/*******************************************************/
+#f1{
+    background: rgb(36, 36, 36);
+    height:400px;
+    margin-top: 350px;
+    
+}
+#f1 > mark{
+    width:20%;
+    float:left;
+    margin:35px;
+    height:300px;
+    margin-left:40px;
+    margin-top:45px;
+    color:aliceblue;
+    box-shadow: 2px -2px 5px rgb(102, 241, 195);
+    background: black;
+}
+#f1 > mark > i{
+    margin:100px;
+}
+
+/*---------------------FOOTER END-----------------*/

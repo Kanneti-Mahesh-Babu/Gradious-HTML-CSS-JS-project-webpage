@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EXAMPLE-4</title>
+  <script src="https://kit.fontawesome.com/cf9df5c1cf.js" crossorigin="anonymous"></script>
+
+  <style>
+  body{
+	background:pink;
+  }
+  #pic{
+	height:250px;
+	width:350x;
+	padding:100px;
+  }
+
+  *{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+/*--------BODY SECTION-----*/
+#logo{
+    position:absolute;
+    border-radius: 50%;
+    margin:8px;
+    width:50px;
+    height:50px;
+}
+
+
+/*-----SCROLLBAR-----*/
+::-webkit-scrollbar{
+    width:6px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #30ff00);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, #00c6ff);
+    border-bottom: 1px solid black;
+}
+
+/*-------HEADER BAR-----------------*/
+.menu-bar{
+    background: aliceblue;
+    box-shadow: -2px 2px 10px black;
+}
+.menu-bar ul{
+    text-align: right;
+    font-family: sans-serif;
+    margin-right:30px;
+}
+.menu-bar ul li{
+    display: inline-flex;
+    margin:10px;
+    padding:15px;
+    text-align: center;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:black;
+}
+.menu-bar ul li a:hover{
+    text-decoration: none;
+    color:white;
+}
+.active,.menu-bar ul li:hover{
+    background: blue;
+    cursor: pointer;
+    border-radius:5px;
+    box-shadow: -2px 2px 5px grey;
+}
+.dropdown{
+    display:none;
+    width:150px;
+}
+.menu-bar ul li:hover .dropdown{
+    display:block;
+    position:absolute;
+    background: aliceblue;
+    margin-top:38px;
+    margin-left: -15px;
+    padding:5px;
+    
+}
+.menu-bar ul li:hover .dropdown li{
+    display:block;
+    position:relative;
+    left:0px;
+    transition: left 1s;
+    border-bottom: 1px dotted grey;
+}
+.menu-bar ul li:hover .dropdown li:hover{
+    left:10px;
+}
+
+
+.sub-dropdown{
+    display:none;
+}
+.dropdown li:hover .sub-dropdown{
+    display:block;
+    position: absolute;
+    background: aliceblue;
+    right:-165px;
+    top:10px;
+}
+.sub-dropdown1{
+    display:none;
+}
+.dropdown li:hover .sub-dropdown1{
+    display:block;
+    position: absolute;
+    background: aliceblue;
+    right:-156px;
+    top:10px;
+}
+#none{
+    border-bottom:none;
+
+}
+
+/*----------END----------------------*/
+
+
+/*-------------FOOTER SECTION------------*/
+
+footer{
+    height:500px;
+    background:black;
+    text-align:center;
+    color:blue;
+    padding:40px 0px;
+    padding-right:10px;
+    margin-top:1000px;
+}
+#footer{
+    color:rgb(255, 7, 90);
+    font-size:15px;
+    position:relative;
+    top:1px;
+}
+#foot{
+    list-style: none;
+    margin-top:50px;
+}
+#foot li a, #foot1 li a{
+   text-decoration: none;
+   color:aliceblue;
+}
+#foot1 li{
+    list-style: none;
+    display:inline;
+}
+#foot1 li{
+    width:20px;
+    height:20px;
+    margin:10px;
+    border:1px solid aliceblue;
+    padding:10px;
+    border-radius: 50%;
+}
+#foot1 li:hover{
+    background: linear-gradient(to right,orange,orangered);
+    cursor: pointer;
+}
+
+
+/*******************************************************/
+#f1{
+    background: rgb(36, 36, 36);
+    height:400px;
+    margin-top: 350px;
+    
+}
+#f1 > mark{
+    width:20%;
+    float:left;
+    margin:35px;
+    height:300px;
+    margin-left:40px;
+    margin-top:45px;
+    color:aliceblue;
+    box-shadow: 2px -2px 5px rgb(102, 241, 195);
+    background: black;
+}
+#f1 > mark > i{
+    margin:100px;
+}
+
+/*---------------------FOOTER END-----------------*/
+  </style>
+</head>
+<body>
+
+            <a href="./index.html"><img src="./images/logo.png" id="logo"/></a>
+<!------------------------------------------------------------------------------------>
+                <!--HEADER Section-->
+    <header class="menu-bar">
+        <ul>
+            <li class="active"><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-folder-open"></i> Portfolio</a>
+                    <ul class="dropdown">
+                        <li><a href="#"> HTML <i class="fa-solid fa-caret-right"></i> </a>
+                            <ul class="sub-dropdown">
+                                <li><a href="./html1.html">Exercise1</a></li>
+                                <li><a href="./html2.html">Exercise2</a></li>
+                                <li><a href="./html3.html">Exercise3</a></li>
+                                <li><a href="./html4.html">Exercise4</a></li>
+                                <li><a href="./html5.html">Exercise5</a></li>
+                                <li><a href="./html6.html">Exercise6</a></li>
+                                <li><a href="./html7.html">Exercise7</a></li>
+                                <li><a href="./html8.html">Exercise8</a></li>
+                                <li><a href="./html9.html">Exercise9</a></li>
+                                <li><a href="./html10.html">Exercise10</a></li>
+                                <li><a href="./html11.html">Exercise11</a></li>
+                                <li><a href="./html12.html">Exercise12</a></li>
+                                <li><a href="./html13.html">Exercise13</a></li>
+                                <li><a href="./html14.html">Exercise14</a></li>
+                                <li  id="none"><a href="./html15.html">Exercise15</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"> CSS <i class="fa-solid fa-caret-right"></i> </a>
+                            <ul class="sub-dropdown1">
+                                <li><a href="./css1.html">Exercise1</a></li>
+                                <li><a href="./css2.html">Exercise2</a></li>
+                                <li><a href="./css3.html">Exercise3</a></li>
+                                <li  id="none"><a href="./css4.html">Exercise4</a></li>
+                            </ul>
+                        
+                        </li>
+                        <li><a href="./wlogin.html"> Figma </a></li>
+                        <li id="none"><a href="./mediaQuery.html"> MediaQuery </a></li>
+                    </ul>
+            </li>
+            <li><a href="#"><i class="fa-solid fa-gavel"></i> Skills </a></li>
+            <li><a href="#"><i class="fa-brands fa-blogger"></i> Blog </a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> Contact </a></li>
+        </ul>
+    </header>
+
+<!--------------------------------------------------------------------------->
+
+
+  <br><br><br>
+	<a href="https://gradious.com/">
+		<img src="./images/himages/html4.svg" id="pic"/>
+	</a>
+
+
+
+
+
+
+    <!---FOOTER Section-->
+
+    <footer>
+        <mark id="f1">
+            <mark>
+                <br> <i> HOME </i>
+
+            </mark>
+
+            <mark>
+                <br> <i> PORTFOLIO </i>
+                    <ul id="foot">
+                        <li><a href="./html1.html"> HTML </a></li><br>
+                        <li><a href="./css1.html"> CSS </a></li><br>
+                        <li><a href="./wlogin.html"> Figma </a></li><br>
+                        <li><a href="./mediaQuery.html"> MediaQuery </a></li><br>
+                    </ul>
+
+            </mark>
+
+            <mark>
+                <br> <i> BLOG </i>
+
+            </mark>
+
+            <mark>
+                <br> <i> CONTACT US </i>  
+                    <ul id="foot1">   <br><br><br>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                        <li><i class="fa-brands fa-google-plus-g"></i></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i></li>
+                        <li><i class="fa-brands fa-instagram-square"></i></li>
+                        
+                    </ul>
+                
+            </mark>
+
+        </mark>
+
+
+<br><br><br><br><br>
+All Copy rights are reserved 2022 &copy; &nbsp;Designed by &nbsp;&nbsp;<b id="footer"> Gradious </b>
+</footer>
+</body>
+</html>
